@@ -1,0 +1,34 @@
+# --- Python Basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# --- RAG / AI Specific (Crucial) ---
+# Ignore local vector databases (ChromaDB, FAISS, etc.)
+db/
+chroma/
+*.idx
+*.pkl
+*.faiss
+
+# Ignore environment variables (Your OpenAI/Anthropic API keys)
+.env
+.env.local
+
+# Ignore large downloaded models (Hugging Face / Llama)
+models/
+*.bin
+*.onnx
+*.gguf
+
+# --- Project Specific ---
+.python-version
+pyproject.toml.bak
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
